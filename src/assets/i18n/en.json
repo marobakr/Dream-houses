@@ -1,0 +1,14 @@
+{
+  "userInfo": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zip": "Zip",
+    "country": "Country",
+    "save": "Save",
+    "lang": "Lang"
+  }
+}
