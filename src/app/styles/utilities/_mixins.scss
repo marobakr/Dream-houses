@@ -1,0 +1,3 @@
+@mixin FontFamily($weight) {
+  font-family: "Neo Sans Arabic #{$weight}";
+}
