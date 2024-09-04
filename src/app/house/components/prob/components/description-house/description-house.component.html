@@ -1,0 +1,34 @@
+<section class="dischouse">
+  <app-headr
+    [backTitle]="'العودة'"
+    [backImage]="'./assets/images/arrow-right.svg'"
+  ></app-headr>
+  <div class="container">
+    <h2 class="position-relative">قم بكتابة وصف منزل أحلامك</h2>
+    <div>
+      <div class="formcontrol mb-3">
+        <label for="formGroupExampleInput" class="form-label mb-2"
+          >وصف مختصر عن المنزل</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="مثلا فيلا قريبة من التجمع الخامس "
+        />
+      </div>
+      <app-text-editors></app-text-editors>
+    </div>
+
+    <app-button
+      class="mb-0"
+      [haveImge]="false"
+      [disabled]="false"
+      [label]="'الخطوة التالية'"
+      [isMb_32]="false"
+    ></app-button>
+    <p class="text-center">
+      قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل
+    </p>
+  </div>
+</section>

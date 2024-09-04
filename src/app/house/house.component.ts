@@ -2,11 +2,18 @@ import { Component, inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MytranslateService } from '../services/mytranslate.service';
 import { PreStepComponent } from './components/pre-step/pre-step.component';
+import { ProbComponent } from './components/prob/prob.component';
+import { SelectionComponent } from './components/selection/selection.component';
 
 @Component({
   selector: 'app-house',
   standalone: true,
-  imports: [TranslateModule, PreStepComponent],
+  imports: [
+    TranslateModule,
+    PreStepComponent,
+    SelectionComponent,
+    ProbComponent,
+  ],
   templateUrl: './house.component.html',
   styleUrl: './house.component.scss',
 })

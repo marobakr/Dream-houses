@@ -10,14 +10,10 @@
 @import "variables";
 
 .home {
-  /* Box Model */
-  padding: 92px 0 63px;
-
-  /* Color */
-  background-color: #40444c;
-
   .container {
-    max-width: 900px;
+    .row {
+      height: 100vh;
+    }
   }
 
   &_inner {
@@ -114,9 +110,6 @@
   }
 
   &_labels {
-    /* Box Model */
-    margin-bottom: 216px;
-
     .label {
       /* Box Model */
       gap: 14px;
@@ -194,17 +187,31 @@
       /* Box Model */
       padding: {
         right: 15px;
+        bottom: 27px;
       }
 
       .images {
         /* Box Model */
-        margin-bottom: 10px;
+        margin : {
+          top: 8px;
+          bottom: 10px;
+        }
       }
 
       .elips {
         /* Box Model */
         width: 12px;
         height: 12px;
+        margin: {
+          top: 7px;
+          left: 7px;
+        }
+
+        img {
+          /* Box Model */
+          width: 16px;
+          height: 16px;
+        }
       }
 
       .child-one {
@@ -219,9 +226,6 @@
       }
 
       .child-two {
-        /* Box Model */
-        margin-bottom: 27px;
-
         /* Color */
         color: $color-text-primary;
 
@@ -233,15 +237,26 @@
 
         @include FontFamily($Regular);
       }
+
+      &.Checked {
+        /* Box Model */
+        border: 0.75px solid #4f9ffd;
+        border-radius: 6px;
+      }
     }
-    .last-box {
-      margin-bottom: 201px;
+
+    .parent_btn {
+      /* Position */
+      left: 32px;
+      bottom: 20px;
     }
 
     button {
       /* Box Model */
+      width: 198px;
+      height: 34px;
       padding: 8px 24px;
-      margin-bottom: 20px;
+
       /* Color */
       background-color: #b0bbd5;
       color: white;

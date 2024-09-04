@@ -1,0 +1,30 @@
+@import "variables";
+
+.location_btn {
+  /* Box Model */
+  min-width: 164px;
+  height: 34px;
+  padding: 10px;
+  gap: 10px;
+  margin-bottom: 9.5px;
+
+  /* Color */
+  background-color: $color-text-primary;
+
+  span {
+    /* Color */
+    color: white;
+
+    /* Text */
+    font: {
+      size: 14px;
+      weight: 500;
+    }
+
+    /* Other */
+    word-wrap: break-word;
+  }
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
