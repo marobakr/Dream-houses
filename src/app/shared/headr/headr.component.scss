@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  /* Box Model */
+  padding: {
+    top: 25px;
+    left: 28px;
+    right: 26px;
+  }
+  margin-bottom: 60px;
+
+  figcaption {
+    /* Box Model */
+    padding-right: 4px;
+
+    /* Color */
+    color: $color-text-primary;
+
+    /* Text */
+    font : {
+      size: 14px;
+    }
+    line-height: 14px;
+    @include FontFamily($Regular);
+    /* Other */
+    word-wrap: break-word;
+  }
+}

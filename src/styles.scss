@@ -1,2 +1,36 @@
 @import "./assets/fonts/fonts.css";
 @import "typography";
+@import "base";
+@import "mixins";
+@import "variables";
+
+.text-editoes {
+  width: 100%;
+  margin-bottom: 30px;
+
+  .ql-toolbar.ql-snow {
+    /* Box Model */
+    // height: 40px;
+    padding: 10px 16px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    /* Color */
+    background-color: #f2f4f7;
+
+    /* Text */
+    @include FontFamily($Regular);
+
+    /* Other */
+    // overflow: hidden;
+  }
+
+  .ql-editor {
+    /* Text */
+    text-align: right;
+  }
+  .ql-container.ql-snow {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}

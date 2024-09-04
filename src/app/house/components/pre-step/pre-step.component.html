@@ -3,7 +3,7 @@
     <div class="home_inner position-relative">
       <div class="row g-0">
         <div class="col-12 col-md-6">
-          <div class="home_right">
+          <div class="home_right h-100">
             <div class="home_heading">
               <p>
                 <span>
@@ -70,35 +70,54 @@
         </div>
 
         <div class="col-12 col-md-6">
-          <div class="home_left">
+          <div class="home_left h-100 position-relative">
             <h4>طريقة بناء الحملة الخاصة بك</h4>
             <p class="label">الطريقة المختارة لطريقة إنشاء رسالة الحملة</p>
 
-            <div class="box">
+            <div
+              (click)="IsCheckedOne = !IsCheckedOne; IsCheckedTwo = false"
+              [ngClass]="{ Checked: IsCheckedOne }"
+              class="box mb-3"
+            >
               <div
                 class="images d-flex justify-content-between align-items-center"
               >
-                <figure>
+                <figure class="mb-0">
                   <img
                     src="../../../../assets/images/Group 1000017645.svg"
                     alt=""
                   />
                 </figure>
+
                 <figure class="elips">
+                  @if (!IsCheckedOne) {
+
                   <img
+                    class="filter-green"
                     src="../../../../assets/images/Ellipse 2314.svg"
                     alt=""
                   />
+                  } @else {
+                  <img
+                    class="filter-green"
+                    src="../../../../assets/images/Primary.svg"
+                    alt=""
+                  />
+                  }
                 </figure>
               </div>
 
               <p class="child-one">اختيار يدوي</p>
-              <p class="child-two">
+              <p class="child-two mb-0">
                 قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،
               </p>
             </div>
 
-            <div class="box last-box">
+            <div
+              (click)="IsCheckedTwo = !IsCheckedTwo; IsCheckedOne = false"
+              [ngClass]="{ Checked: IsCheckedTwo }"
+              class="box"
+            >
               <div
                 class="images d-flex justify-content-between align-items-center"
               >
@@ -108,20 +127,32 @@
                     alt=""
                   />
                 </figure>
+
                 <figure class="elips">
+                  @if (!IsCheckedTwo) {
+
                   <img
+                    class="filter-green"
                     src="../../../../assets/images/Ellipse 2314.svg"
                     alt=""
                   />
+                  } @else {
+                  <img
+                    class="filter-green"
+                    src="../../../../assets/images/Primary.svg"
+                    alt=""
+                  />
+                  }
                 </figure>
               </div>
 
               <p class="child-one">اختيار عن طريق الذكاء الأصطناعي</p>
-              <p class="child-two">
+              <p class="child-two mb-0">
                 قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،
               </p>
             </div>
-            <div>
+
+            <div class="position-absolute parent_btn w-100">
               <button class="btn d-block me-auto">أبدأ الأن</button>
             </div>
           </div>

@@ -1,0 +1,10 @@
+<button
+  class="location_btn btn d-flex align-items-center justify-content-center mx-auto"
+  [disabled]="disabled"
+  [ngClass]="{ 'mb-32': isMb_32 }"
+>
+  @if ( haveImge) {
+  <img [src]="imagePath" [alt]="label" />
+  }
+  <span>{{ label }}</span>
+</button>
