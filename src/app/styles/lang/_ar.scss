@@ -39,12 +39,7 @@
 
 [dir="rtl"] .media-content p {
   /* Box Model */
-  order: 0;
-}
-
-[dir="rtl"] .inner-check .form-checked {
-  /* Box Model */
-  flex-direction: row-reverse;
+  order: -1;
 }
 
 [dir="rtl"] .home_left .box {

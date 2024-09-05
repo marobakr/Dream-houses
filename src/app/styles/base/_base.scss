@@ -23,3 +23,10 @@
   background-color: transparent;
   --bs-form-check-bg-image: url("../../../..../../assets/images/Primary.svg");
 }
+.transparent-checkebox .form-check-input[type="radio"] {
+  background: none;
+  border: 1px solid #000;
+}
+.transparent-checkebox .form-check-input:checked[type="radio"] {
+  background-image: url("../../../..../../assets/images/Primary.svg");
+}

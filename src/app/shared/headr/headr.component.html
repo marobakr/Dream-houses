@@ -7,6 +7,25 @@
     <figcaption>{{ backTitle }}</figcaption>
   </figure>
 
+  <div class="">
+    <select class="form-select" (change)="changeLanguage($event)">
+      <option
+        [class.bg-info]="_translateService.currentLang == 'ar'"
+        (click)="change('ar')"
+        value="en"
+      >
+        English
+      </option>
+      <option
+        [class.bg-info]="_translateService.currentLang == 'en'"
+        (click)="change('en')"
+        value="ar"
+      >
+        Arabic
+      </option>
+    </select>
+  </div>
+
   <figure class="mb-0">
     <img [src]="close" alt=" close" />
   </figure>

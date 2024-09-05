@@ -72,6 +72,12 @@
       word-wrap: break-word;
 
       @include FontFamily($Medium);
+
+      @media (width <= 900px) {
+        & {
+          font-size: 14px;
+        }
+      }
     }
 
     @media (width <= 500px) {

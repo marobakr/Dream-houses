@@ -51,6 +51,12 @@
       background-size: 13px 16px;
       background-image: url("../../../../../assets/images/Vector (2).svg");
       content: "";
+
+      @media (width <= 500px) {
+        & {
+          right: 5px;
+        }
+      }
     }
 
     &::before {
@@ -68,6 +74,12 @@
       background-size: 13px 16px;
       background-image: url("../../../../../assets/images/Vector (2).svg");
       content: "";
+
+      @media (width <= 500px) {
+        & {
+          left: 5px;
+        }
+      }
     }
   }
 

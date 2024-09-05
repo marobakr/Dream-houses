@@ -15,8 +15,10 @@
         <p class="mb-0">{{ "sendMsg.designLabel" | translate }}</p>
       </div>
 
-      <div class="inner-check d-flex align-items-center">
-        <div class="form-checked d-flex justify-content-start gap-1">
+      <div class="inner-check d-sm-block d-md-flex align-items-center">
+        <div
+          class="form-checked transparent-checkebox d-flex justify-content-start gap-1"
+        >
           <label class="form-check-label" for="flexRadioDefault1">
             {{ "sendMsg.modernDesign" | translate }}
           </label>
@@ -30,7 +32,9 @@
             (change)="onRadioChange(option2, 'IsCheckedTwo')"
           />
         </div>
-        <div class="form-checked d-flex justify-content-start gap-1">
+        <div
+          class="form-checked d-flex transparent-checkebox justify-content-start gap-1"
+        >
           <label class="form-check-label" for="flexRadioDefault2">
             {{ "sendMsg.smartDesign" | translate }}
           </label>
