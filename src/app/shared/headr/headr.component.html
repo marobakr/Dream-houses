@@ -8,16 +8,19 @@
   </figure>
 
   <div class="">
-    <select class="form-select" (change)="changeLanguage($event)">
+    <select
+      class="form-select text-bg-secondary"
+      (change)="changeLanguage($event)"
+    >
       <option
-        [class.bg-info]="_translateService.currentLang == 'ar'"
+        [class.bg-secondary]="_translateService.currentLang == 'ar'"
         (click)="change('ar')"
         value="en"
       >
         English
       </option>
       <option
-        [class.bg-info]="_translateService.currentLang == 'en'"
+        [class.bg-secondary]="_translateService.currentLang == 'en'"
         (click)="change('en')"
         value="ar"
       >
