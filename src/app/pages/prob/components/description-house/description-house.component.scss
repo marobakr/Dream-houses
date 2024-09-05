@@ -1,0 +1,85 @@
+@import "mixins";
+@import "variables";
+
+.dischouse {
+  h2 {
+    /* Box Model */
+    width: fit-content;
+    margin-bottom: 42px;
+
+    /* Text */
+    font : {
+      size: 20px;
+      weight: 500;
+    }
+    @include FontFamily($Medium);
+
+    /* Other */
+    line-height: 21px;
+    word-wrap: break-word;
+
+    &::after {
+      /* Posistion */
+      position: absolute;
+      right: -1px;
+      top: -16.5px;
+      transform: translate(100%, -100%);
+
+      /* Box Model */
+      width: 13px;
+      height: 16px;
+
+      /* Other */
+      background-size: 13px 16px;
+      background-image: url("../../../../../assets/images/Vector (2).svg");
+      content: "";
+    }
+
+    &::before {
+      /* Posistion */
+      position: absolute;
+      left: -33.5px;
+      bottom: -14px;
+      transform: translateY(100%);
+
+      /* Box Model */
+      width: 13px;
+      height: 16px;
+
+      /* Other */
+      background-size: 13px 16px;
+      background-image: url("../../../../../assets/images/Vector (2).svg");
+      content: "";
+    }
+  }
+
+  label {
+    /* Color */
+    color: #6b7280;
+
+    /* Text */
+    font : {
+      size: 13px;
+    }
+
+    /* Other */
+    word-wrap: break-word;
+  }
+  input {
+    /* Box Model */
+    max-width: 437px;
+    height: 34px;
+  }
+
+  p {
+    /* Color */
+    color: #9ca3af;
+
+    /* Text */
+    font-size: 12px;
+    line-height: 10px;
+
+    /* Other */
+    word-wrap: break-word;
+  }
+}
