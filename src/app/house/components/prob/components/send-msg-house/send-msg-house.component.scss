@@ -1,0 +1,152 @@
+@import "mixins";
+@import "variables";
+
+.sendMsg {
+  &_title {
+    /* Box Model */
+    margin-bottom: 31px;
+
+    h2 {
+      /* Box Model */
+      width: fit-content;
+      margin-bottom: 14px;
+
+      /* Text */
+      font : {
+        size: 20px;
+        weight: 500;
+      }
+      @include FontFamily($Medium);
+
+      /* Other */
+      line-height: 21px;
+      word-wrap: break-word;
+    }
+
+    p {
+      /* Color */
+      color: #a5a7ab;
+
+      /* Text */
+      font-size: 14px;
+      line-height: 21px;
+
+      /* Other */
+      word-wrap: break-word;
+    }
+  }
+
+  .select-box {
+    /* Box Model */
+    border: 0.75px solid #d3d6dc66;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 22px;
+
+    /* Color */
+    background-color: #fcfcfc;
+
+    .media-content {
+      /* Box Model */
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+    .inner-check {
+      /* Box Model */
+      gap: 37px;
+    }
+    .form-checked {
+      label {
+        /* Box Model */
+        width: fit-content;
+      }
+
+      .form-check-input:focus {
+        box-shadow: none;
+      }
+      .form-check-input:checked[type="radio"] {
+        --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+      }
+    }
+  }
+
+  /* Box Model */
+  padding: 16px;
+
+  .box-area {
+    /* Box Model */
+    margin-bottom: 20px;
+
+    .text-box {
+      /* Box Model */
+      border: 0.75px solid #d3d6dc66;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 12px 12px 10px;
+
+      /* Color */
+      background-color: #fcfcfc;
+
+      .media-content {
+        p {
+          /* Color */
+          color: #a5a7ab;
+
+          /* Text */
+          font-size: 14px;
+          line-height: 21px;
+
+          /* Other */
+          word-wrap: break-word;
+        }
+      }
+
+      .subject {
+        span {
+          /* Text */
+          font-size: 14px;
+          line-height: 28px;
+
+          /* Other */
+          word-wrap: break-word;
+        }
+        &_label {
+          /* Color */
+          color: #8a8ea1;
+        }
+        &_description {
+          /* Color */
+          color: #1c1c28;
+        }
+      }
+    }
+
+    .form-box {
+      textarea {
+        /* Box Model */
+        padding: 16px;
+        max-height: 234px;
+        border-radius: 0;
+        border-top: 0.75px solid rgba(211, 214, 220, 0.4);
+        box-shadow: 0px 3px 7.599999904632568px
+          rgba(145.78, 145.78, 145.78, 0.1);
+
+        /* Text */
+        font-size: 14px;
+        line-height: 21px;
+        word-wrap: break-word;
+        text-align: right;
+
+        &.form-control:focus {
+          /* Box Model */
+          border-color: rgba(211, 214, 220, 0.4);
+          box-shadow: none;
+        }
+      }
+      label {
+        /* Position */
+        right: 0;
+      }
+    }
+  }
+}

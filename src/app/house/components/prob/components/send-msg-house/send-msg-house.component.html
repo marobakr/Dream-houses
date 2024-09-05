@@ -1,1 +1,83 @@
-<p>send-msg-house works!</p>
+<section class="sendMsg">
+  <app-headr
+    [backTitle]="'العودة'"
+    [backImage]="'./assets/images/arrow-right.svg'"
+  ></app-headr>
+  <div class="container">
+    <div class="sendMsg_title">
+      <h2>قم بكتابة نص الرسالة المرسلة</h2>
+      <p>قم بتسمية حملتك و تاريخ إرسال الحملة المتوقع</p>
+    </div>
+
+    <div class="select-box">
+      <div class="media-content d-flex align-items-center">
+        <img src="../../../../../../assets/images/calendar-tick.svg" alt="" />
+        <p class="mb-0">تصميم المنزل</p>
+      </div>
+
+      <div class="inner-check d-flex align-items-center">
+        <div
+          class="form-checked d-flex justify-content-start flex-row-reverse gap-1"
+        >
+          <label class="form-check-label" for="flexRadioDefault1">
+            تصميم حديث
+          </label>
+          <input
+            class="form-check-input"
+            type="radio"
+            value=""
+            id="flexRadioDefault1"
+            name="flexRadioDefault"
+          />
+        </div>
+        <div
+          class="form-checked d-flex justify-content-start flex-row-reverse gap-1"
+        >
+          <label class="form-check-label" for="flexRadioDefault2">
+            تصميم حديث وذكي
+          </label>
+          <input
+            class="form-check-input"
+            type="radio"
+            value=""
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box-area">
+      <div class="text-box">
+        <div class="media-content d-flex align-items-center mb-2 gap-1">
+          <img src="../../../../../../assets/images/eye.svg" alt="" />
+          <p class="mb-0">معاينة وصف المنزل</p>
+        </div>
+        <p class="subject mb-0">
+          <span class="subject_label">الموضوع:</span>
+          <span class="subject_description pe-2">
+            فيلا قريبة من التجمع الخامس</span
+          >
+        </p>
+      </div>
+      <div class="form-box">
+        <textarea
+          class="form-control"
+          placeholder="  عزيزي [اسم العميل]، نحن في [اسم الشركة] نسعى دائمًا لتقديم أفضل الحلول"
+          id="leble"
+        ></textarea>
+      </div>
+    </div>
+
+    <app-button
+      class="mb-0"
+      [haveImge]="false"
+      [disabled]="false"
+      [label]="'الخطوة التالية'"
+      [isMb_32]="false"
+    ></app-button>
+    <p class="text-center">
+      قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل
+    </p>
+  </div>
+</section>
