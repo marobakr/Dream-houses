@@ -11,7 +11,9 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input({ required: false }) imagePath: string = '';
   @Input({ required: true }) label: string = '';
-  @Input({ required: true }) disabled: boolean = false;
+  @Input({ required: true }) disabled: boolean = true;
   @Input({ required: true }) haveImge: boolean = false;
   @Input({ required: true }) isMb_32: boolean = false;
+
+  @Input({ required: true }) isMe_auto: boolean = false;
 }

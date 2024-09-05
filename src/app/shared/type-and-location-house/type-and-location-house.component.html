@@ -1,0 +1,114 @@
+<section class="location text-center">
+  <div>
+    <app-headr
+      [backTitle]="'العودة'"
+      [backImage]="'./assets/images/arrow-right.svg'"
+    ></app-headr>
+  </div>
+  <div class="container d-flex flex-column h-100">
+    <div
+      [ngClass]="{'top-star': identifier, 'bottom-star': identifier,}"
+      class="location_title mx-auto"
+    >
+      <h1>
+        {{ location_heading }}
+      </h1>
+      <p>{{ location_title }}</p>
+    </div>
+
+    <div class="location_cards d-flex justify-content-center gap-3">
+      <div class="row gy-3">
+        <div class="col-sm-12 col-md-4">
+          <label for="Radio3" class="card text-center">
+            <div class="card text-center">
+              <span class="d-block mx-auto ms-md-auto elips">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="Radio3"
+                  value=""
+                  name="flexRadioDefault"
+                  #option1
+                  (change)="onRadioChange(option1, 'IsCheckedOne')"
+                />
+              </span>
+
+              <figure>
+                <img [src]="cardImagePathOne" [alt]="cardTextOne" />
+              </figure>
+              <figcaption>{{ cardTextOne }}</figcaption>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <label for="Radio2" class="card text-center">
+            <div class="card text-center">
+              <span class="d-block mx-auto ms-md-auto elips">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  value=""
+                  name="flexRadioDefault"
+                  id="Radio2"
+                  #option2
+                  (change)="onRadioChange(option2, 'IsCheckedOne')"
+                />
+              </span>
+
+              <figure>
+                <img [src]="cardImagePathTwo" [alt]="cardTextTwo" />
+              </figure>
+
+              <figcaption class="">{{ cardTextTwo }}</figcaption>
+            </div>
+          </label>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <label for="Radio1" class="card text-center">
+            <div class="card text-center">
+              <span class="d-block mx-auto ms-md-auto elips">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  value=""
+                  name="flexRadioDefault"
+                  id="Radio1"
+                  #option3
+                  (change)="onRadioChange(option3, 'IsCheckedOne')"
+                />
+              </span>
+
+              <figure>
+                <img [src]="cardImagePathThere" [alt]="cardTextThere" />
+              </figure>
+              <figcaption class="">{{ cardTextThere }}</figcaption>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <app-button
+      [imagePath]="imagePath"
+      [haveImge]="true"
+      [isMe_auto]="false"
+      [disabled]="true"
+      [isMb_32]="true"
+      [disabled]="IsCheckedOne || IsCheckedTwo || IsCheckedThere"
+      (click)="nextStep(IsCheckedOne || IsCheckedTwo || IsCheckedThere)"
+      [label]="
+        '
+    أبدأ الأن'
+      "
+    ></app-button>
+
+    <div class="location_footer">
+      <p>{{ footerLabelOne }}</p>
+      <p>
+        {{ footerLabelTwo }}
+      </p>
+    </div>
+  </div>
+</section>

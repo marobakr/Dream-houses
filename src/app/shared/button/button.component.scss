@@ -2,19 +2,18 @@
 
 .location_btn {
   /* Box Model */
-  min-width: 164px;
-  height: 34px;
-  padding: 10px;
+  min-width: 198px;
+  min-height: 34px;
+
+  padding: 8px 24px;
   gap: 10px;
   margin-bottom: 9.5px;
 
   /* Color */
-  background-color: $color-text-primary;
+  background-color: $color-text-not-active;
+  color: white;
 
   span {
-    /* Color */
-    color: white;
-
     /* Text */
     font: {
       size: 14px;
@@ -27,4 +26,7 @@
 }
 .mb-32 {
   margin-bottom: 32px;
+}
+.active-color {
+  background-color: $color-text-active;
 }

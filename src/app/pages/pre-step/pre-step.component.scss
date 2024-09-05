@@ -1,0 +1,277 @@
+@import "mixins";
+@import "variables";
+
+.home {
+  .container-flude {
+    .row {
+      height: 100vh;
+    }
+  }
+
+  &_inner {
+    /* BOx Model */
+    border-radius: 10.5px;
+
+    .close {
+      /* Box Model */
+      margin : {
+        top: 24px;
+        left: 28px;
+        bottom: 17px;
+      }
+
+      /* Position */
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &_right {
+    /* Box Model */
+    padding: {
+      top: 66px;
+      right: 50px;
+    }
+
+    /* Other */
+    background-image: url("../../../assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    & > p {
+      /* Color */
+      color: $color-text-primary;
+
+      /* Text */
+      font-size: 14px;
+      line-height: 17px;
+
+      /* Other */
+      word-wrap: break-word;
+    }
+
+    & h2 {
+      /* Box Model */
+      max-width: 354px;
+      max-height: 58px;
+
+      /* Position */
+      margin-bottom: 10px;
+
+      /* Color */
+      color: $color-text-secondary;
+
+      /* Text */
+      font : {
+        size: 24px;
+        weight: 500;
+      }
+      line-height: 28px;
+
+      /* Other */
+      word-wrap: break-word;
+
+      @include FontFamily($Medium);
+    }
+
+    @media (width <= 500px) {
+      & {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  &_heading {
+    /* Position */
+    margin: {
+      bottom: 38px;
+    }
+
+    p {
+      /* Box Model */
+      max-width: 303px;
+      max-height: 60px;
+
+      /* Color */
+      color: $color-text-primary;
+      /* Text */
+      font : {
+        size: 16px;
+      }
+
+      /* Other */
+      line-height: 20px;
+      word-wrap: break-word;
+    }
+  }
+
+  &_labels {
+    .label {
+      /* Box Model */
+      gap: 14px;
+
+      /* Box Model */
+      margin-bottom: 25px;
+
+      p {
+        /*  Text */
+        font-size: 14px;
+
+        /* Other */
+        word-wrap: break-word;
+      }
+
+      .bg {
+        /* Box Model */
+        width: 26px;
+
+        /* Other */
+        background-image: url("../../../assets/images/Ellipse\ 2314.svg");
+        background-repeat: no-repeat;
+        background-size: 26px 26px;
+        background-position: center;
+      }
+    }
+  }
+
+  &_left {
+    /* Box Model */
+    padding: {
+      top: 66px;
+      right: 20px;
+      left: 33px;
+    }
+
+    /* Other */
+    background: #fff;
+    box-shadow: 0px 1.835px 30px 0px rgba(112, 144, 176, 0.1);
+
+    h4 {
+      /* Box Model */
+      margin-bottom: 9px;
+
+      /* Color */
+      color: $color-text-secondary;
+
+      /* Text */
+      font : {
+        size: 20px;
+        weight: 500;
+      }
+      @include FontFamily($Medium);
+
+      /* Other */
+      word-wrap: break-word;
+    }
+
+    .label {
+      /* Box Model */
+      margin-bottom: 20px;
+
+      /* Color */
+      color: $color-text-primary;
+
+      /* Text */
+      line-height: 20px;
+
+      /* Other */
+      word-wrap: break-word;
+    }
+
+    .box {
+      /* Box Model */
+      padding: {
+        right: 15px;
+        bottom: 23px;
+      }
+
+      .images {
+        /* Box Model */
+        margin : {
+          top: 8px;
+          bottom: 10px;
+        }
+      }
+
+      .child-one {
+        /* Box Model */
+        margin-bottom: 6px;
+
+        /* Color */
+        color: #2e2e2e;
+
+        /* Other */
+        word-wrap: break-word;
+      }
+
+      .child-two {
+        /* Color */
+        color: $color-text-primary;
+
+        /* Text */
+        font-size: 14px;
+
+        /* Other */
+        word-wrap: break-word;
+
+        @include FontFamily($Regular);
+      }
+
+      &.Checked {
+        /* Box Model */
+        border: 0.75px solid #4f9ffd;
+        border-radius: 6px;
+      }
+    }
+
+    .parent_btn {
+      /* Position */
+      margin: {
+        left: 32px;
+        bottom: 20px;
+      }
+    }
+    hr {
+      /* Box Model */
+      margin-bottom: 22px;
+    }
+    .select {
+      /* Box Model */
+      margin: {
+        bottom: 61px;
+        top: 22px;
+      }
+      h2 {
+        /* Box Model */
+        margin-bottom: 9px;
+
+        /* Color */
+        color: $color-text-secondary;
+
+        /* Text */
+        font : {
+          size: 20px;
+          weight: 500;
+        }
+        @include FontFamily($Medium);
+
+        /* Other */
+        word-wrap: break-word;
+      }
+      p {
+        /* Box Model */
+        margin-bottom: 14px;
+
+        /* Color */
+        color: $color-text-primary;
+
+        /* Text */
+        font-size: 16px;
+
+        /* Other */
+        word-wrap: break-word;
+      }
+    }
+  }
+}

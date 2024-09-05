@@ -1,0 +1,90 @@
+<section class="sendMsg">
+  <app-headr
+    [backTitle]="'العودة'"
+    [backImage]="'./assets/images/arrow-right.svg'"
+  ></app-headr>
+  <div class="container position-relative">
+    <div class="sendMsg_title">
+      <h2>قم بكتابة نص الرسالة المرسلة</h2>
+      <p>قم بتسمية حملتك و تاريخ إرسال الحملة المتوقع</p>
+    </div>
+
+    <div class="select-box">
+      <div class="media-content d-flex align-items-center">
+        <img src="../../../../../../assets/images/calendar-tick.svg" alt="" />
+        <p class="mb-0">تصميم المنزل</p>
+      </div>
+
+      <div class="inner-check d-flex align-items-center">
+        <div
+          class="form-checked d-flex justify-content-start flex-row-reverse gap-1"
+        >
+          <label class="form-check-label" for="flexRadioDefault1">
+            تصميم حديث
+          </label>
+          <input
+            class="form-check-input"
+            type="radio"
+            value=""
+            id="flexRadioDefault1"
+            name="flexRadioDefault"
+            #option2
+            (change)="onRadioChange(option2, 'IsCheckedTwo')"
+          />
+        </div>
+        <div
+          class="form-checked d-flex justify-content-start flex-row-reverse gap-1"
+        >
+          <label class="form-check-label" for="flexRadioDefault2">
+            تصميم حديث وذكي
+          </label>
+          <input
+            class="form-check-input"
+            type="radio"
+            value=""
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            #option1
+            (change)="onRadioChange(option1, 'IsCheckedOne')"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="box-area">
+      <div class="text-box">
+        <div class="media-content d-flex align-items-center mb-2 gap-1">
+          <img src="../../../../../../assets/images/eye.svg" alt="" />
+          <p class="mb-0">معاينة وصف المنزل</p>
+        </div>
+        <p class="subject mb-0">
+          <span class="subject_label">الموضوع:</span>
+          <span class="subject_description pe-2">
+            فيلا قريبة من التجمع الخامس</span
+          >
+        </p>
+      </div>
+      <div class="form-box">
+        <textarea
+          class="form-control"
+          placeholder="  عزيزي [اسم العميل]، نحن في [اسم الشركة] نسعى دائمًا لتقديم أفضل الحلول"
+          id="leble"
+          [(ngModel)]="msg"
+        ></textarea>
+      </div>
+    </div>
+
+    <app-button
+      class="mb-0"
+      [isMe_auto]="false"
+      [haveImge]="false"
+      [label]="'الخطوة التالية'"
+      [isMb_32]="false"
+      [disabled]="IsCheckedOne || (IsCheckedTwo && msg.length > 20)"
+      (click)="nextStep(IsCheckedOne || (IsCheckedTwo && msg.length > 20))"
+    ></app-button>
+    <p class="text-center">
+      قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل
+    </p>
+  </div>
+</section>

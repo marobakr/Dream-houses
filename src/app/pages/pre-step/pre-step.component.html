@@ -1,0 +1,165 @@
+<section class="home">
+  <div class="container-flude">
+    <div class="home_inner position-relative">
+      <div class="row g-0">
+        <div class="col-12 col-md-6">
+          <div class="home_right h-100">
+            <div class="home_heading">
+              <p>
+                <span>
+                  <img
+                    src="./assets/images/fxemoji_megaphone.svg"
+                    alt="fxemoji_megaphone"
+                  />
+                </span>
+                تهيئة الحملات الإعلانية
+              </p>
+              <h2>مرحبًا بك في منصة أختيار عقارات سكنية للتعمير</h2>
+              <p class="label mb-0">
+                قم بإضافة عملائك الحاليين إلي نظامك الجديد لتبدأ التجربة""قم
+                بإضافة عملائك الحاليين إلي نظامك الجديد لتبدأ التجربة"
+              </p>
+            </div>
+
+            <div class="home_labels">
+              <div class="label d-flex align-items-center">
+                <div
+                  class="bg d-flex justify-content-center align-items-center"
+                >
+                  <figure class="mb-0">
+                    <img src="./assets/images/check.svg" alt="" />
+                  </figure>
+                </div>
+                <p class="mb-0">قم بتحميل شعارك وتفاصيل علامتك التجارية</p>
+              </div>
+
+              <div class="label d-flex align-items-center">
+                <div
+                  class="bg d-flex justify-content-center align-items-center"
+                >
+                  <figure class="mb-0">
+                    <img src="./assets/images/check.svg" alt="" />
+                  </figure>
+                </div>
+                <p class="mb-0">اختر وخصص الحقول التي تحتاجها</p>
+              </div>
+
+              <div class="label d-flex align-items-center">
+                <div
+                  class="bg d-flex justify-content-center align-items-center"
+                >
+                  <figure class="mb-0">
+                    <img src="./assets/images/check.svg" alt="" />
+                  </figure>
+                </div>
+                <p class="mb-0">اختر موضوعاً وصمم مظهر استمارتك</p>
+              </div>
+
+              <div class="label d-flex align-items-center">
+                <div
+                  class="bg d-flex justify-content-center align-items-center"
+                >
+                  <figure class="mb-0">
+                    <img src="./assets/images/check.svg" alt="" />
+                  </figure>
+                </div>
+                <p class="mb-0">ضبط رسالة شكر وإجراءات المتابعة</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="home_left h-100 position-relative">
+            <h4>طريقة بناء الحملة الخاصة بك</h4>
+            <p class="label">الطريقة المختارة لطريقة إنشاء رسالة الحملة</p>
+            <label for="Radioselect01" class="d-block">
+              <div [ngClass]="{ Checked: IsCheckedOne }" class="box mb-3">
+                <div
+                  class="images d-flex justify-content-between align-items-center"
+                >
+                  <figure class="mb-0">
+                    <img src="./assets/images/Group 1000017645.svg" alt="" />
+                  </figure>
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="Radioselect01"
+                    value=""
+                    name="flexRadioDefault"
+                    #option1
+                    (change)="onRadioChange(option1, 'IsCheckedOne')"
+                  />
+                </div>
+
+                <p class="child-one">اختيار يدوي</p>
+                <p class="child-two mb-0">
+                  قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،
+                </p>
+              </div>
+            </label>
+            <label for="Radioselect02" class="d-block">
+              <div [ngClass]="{ Checked: IsCheckedTwo }" class="box">
+                <div
+                  class="images d-flex justify-content-between align-items-center"
+                >
+                  <figure>
+                    <img src="./assets/images/Group 1000017646.svg" alt="" />
+                  </figure>
+
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value=""
+                    name="flexRadioDefault"
+                    id="Radioselect02"
+                    #option2
+                    (change)="onRadioChange(option2, 'IsCheckedTwo')"
+                  />
+                </div>
+
+                <p class="child-one">اختيار عن طريق الذكاء الأصطناعي</p>
+                <p class="child-two mb-0">
+                  قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،
+                </p>
+              </div>
+            </label>
+
+            <hr class="my-0" />
+
+            <div class="select">
+              <h2>قم بتسمية مشروع أختيار</h2>
+              <p>أسم مشروعك يجب ان يكون مميز وواضح</p>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="أسم مشروع مقترح"
+              />
+            </div>
+
+            <div class="parent_btn w-100">
+              <app-button
+                [haveImge]="false"
+                [label]="'أبدأ الأن'"
+                [isMe_auto]="true"
+                [isMb_32]="false"
+                [disabled]="IsCheckedOne || IsCheckedTwo"
+                (click)="nextStep(IsCheckedOne || IsCheckedTwo)"
+              >
+              </app-button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="close position-absolute">
+        <img
+          class="w-100"
+          src="./assets/images/Frame 1321319546.svg"
+          alt="close"
+        />
+      </figure>
+    </div>
+  </div>
+</section>
