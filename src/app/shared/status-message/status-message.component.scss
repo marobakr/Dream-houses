@@ -25,6 +25,10 @@
 
       /* Other */
       word-wrap: break-word;
+
+      @media (width<=400px) {
+        line-height: normal;
+      }
     }
 
     p {
@@ -42,12 +46,13 @@
   .imges-center {
     &.imge-pendding {
       /* Box Model */
-      height: 228px;
-      width: 228px;
+      min-height: 228px;
+      min-width: 228px;
       margin-bottom: 101px;
 
       background-size: 228px 228px;
       background-position: center;
+      background-repeat: no-repeat;
       /* Other */
       background-image: url("../../../assets/images/Ellipse 120.svg");
     }
@@ -91,6 +96,12 @@
 
       /* Colo */
       background-color: #3e97ff;
+
+      /* Other */
+      transition: all 5s;
+    }
+    .done-proccess {
+      width: 100%;
     }
   }
   .exit {

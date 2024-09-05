@@ -14,9 +14,9 @@ export const routes: Routes = [
   {
     path: 'select',
     loadComponent: () =>
-      import(
-        './pages/selection/components/house-type/house-type.component'
-      ).then((m) => m.HouseTypeComponent),
+      import('./pages/selection/selection.component').then(
+        (m) => m.SelectionComponent
+      ),
     children: [
       {
         path: 'location',
@@ -32,7 +32,7 @@ export const routes: Routes = [
             './pages/selection/components/house-type/house-type.component'
           ).then((m) => m.HouseTypeComponent),
       },
-      { path: '', redirectTo: 'select', pathMatch: 'full' },
+      { path: '', redirectTo: 'house', pathMatch: 'full' },
     ],
   },
 
@@ -48,6 +48,7 @@ export const routes: Routes = [
             './pages/prob/components/description-house/description-house.component'
           ).then((m) => m.DescriptionHouseComponent),
       },
+
       {
         path: 'message',
         loadComponent: () =>

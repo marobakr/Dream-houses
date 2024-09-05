@@ -11,8 +11,8 @@ import { TypeAndLocationHouseComponent } from '../../../../shared/type-and-locat
   styleUrl: './location.component.scss',
 })
 export class LocationComponent {
-  location_title: string = 'أختر المكان المفضل لسكنك';
-  location_heading: string =
+  location_heading: string = 'أختر المكان المفضل لسكنك';
+  location_title: string =
     ' قم بأختيار مصدر شقك الأسكانية كل تستكمل باقي الخطوات';
   cardImagePathOne: string = './assets/images/house.svg';
   cardTextOne: string = 'القاهرة';

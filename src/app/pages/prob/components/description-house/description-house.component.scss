@@ -2,6 +2,25 @@
 @import "variables";
 
 .dischouse {
+  .container {
+    &::before {
+      /* Posistion */
+      position: absolute;
+      left: 85px;
+      top: 61px;
+
+      /* Box Model */
+      min-width: 144px;
+      min-height: 144px;
+
+      /* Other */
+      background-position: center;
+      background-size: cover;
+      background-image: url("../../../../../assets/images/Group 1000017861.svg");
+      content: "";
+    }
+  }
+
   h2 {
     /* Box Model */
     width: fit-content;

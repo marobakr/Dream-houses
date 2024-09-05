@@ -36,11 +36,11 @@
         <span class="label-left mb-0">10\100</span>
       </div>
       <div class="progress-bar position-relative flex-grow-1">
-        <div class="progress"></div>
+        <div #progressDiv class="progress"></div>
       </div>
     </div>
     } @else {
-    <p class="exit">خروج</p>
+    <p role="button" (click)="_router.navigate(['/home'])" class="exit">خروج</p>
     }
   </div>
 </section>

@@ -2,14 +2,7 @@
 @import "variables";
 
 .location {
-  /* Overrideeeeeeeeeee */
   padding: 0;
-
-  /* Box Model */
-  /* Overrideeeeeeeeeee */
-
-  // height: 100vh;
-
   .container {
     background-color: #fff;
   }
@@ -71,6 +64,9 @@
       background-size: 13px 16px;
       background-image: url("../../../assets/images/Vector.svg");
       content: "";
+
+      &.top-star {
+      }
     }
 
     &::before {
@@ -87,6 +83,18 @@
       content: "";
       background-image: url("../../../assets/images/Vector\ \(1\).svg");
       background-size: 18px 21px;
+
+      @media (width <= 500px) {
+        & {
+          left: 6px;
+        }
+      }
+    }
+
+    &::after {
+      right: 32px;
+      top: -7px;
+      transform: translate(100%, -100%);
     }
   }
 
@@ -109,8 +117,8 @@
 
       figure {
         /* Box Model */
-        width: 59px;
-        height: 59px;
+        min-width: 59px;
+        min-height: 59px;
         margin: 25px 53px 19px 54px;
       }
 

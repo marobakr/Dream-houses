@@ -4,9 +4,9 @@
 .header {
   /* Box Model */
   padding: {
-    top: 25px;
-    left: 28px;
-    right: 26px;
+    top: 23px;
+    left: 27px;
+    right: 27px;
   }
   margin-bottom: 60px;
 
@@ -25,5 +25,9 @@
     @include FontFamily($Regular);
     /* Other */
     word-wrap: break-word;
+  }
+
+  .back {
+    cursor: pointer;
   }
 }

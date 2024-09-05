@@ -57,15 +57,3 @@ export class PreStepComponent {
     }
   }
 }
-/*
-
--1: small the wight for form-check-input
--2 click active for checkbox
--3 remove ../../../ form all image
--4 add fixed with for image
--5 change cardm manula to card bootstrap
-6- use max-width for any fixed width
-7- نفترض كلام مرو صح طب حهط border-raiuis ازاي؟
-8-make global style for shared style p ,h2
-9- wright mendia qeury
-*/

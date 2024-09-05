@@ -14,4 +14,6 @@ export class ButtonComponent {
   @Input({ required: true }) disabled: boolean = true;
   @Input({ required: true }) haveImge: boolean = false;
   @Input({ required: true }) isMb_32: boolean = false;
+
+  @Input({ required: true }) isMe_auto: boolean = false;
 }

@@ -12,4 +12,5 @@ export class MessagePenddingComponent {
   messageHead = 'جاري إرسال رسالتك الأسكانية';
   messageTitle = 'الرجاء الأنتظار بعض الدقائق فقط';
   imageStatus: string = './assets/images/0c9abd2b33848aff4f0300d95ff98858.gif';
+  successProcces: boolean = true;
 }

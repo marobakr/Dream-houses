@@ -1,3 +1,28 @@
-section {
+.form-check-input[type="radio"] {
   /* Box Model */
+  min-width: 16px;
+  height: 16px;
+  margin: {
+    top: 7px;
+    left: 7px;
+  }
+  border: 0;
+
+  /* Other */
+  background-color: transparent;
+  --bs-form-check-bg-image: url("../../../assets/images/Ellipse\ 2314.svg");
+}
+
+.form-check-input:focus {
+  /* Other */
+  box-shadow: none;
+}
+.form-check-input:checked[type="radio"] {
+  /* BoX Model */
+  width: 16px;
+  height: 16px;
+
+  /* Other */
+  background-color: transparent;
+  --bs-form-check-bg-image: url("../../../..../../assets/images/Primary.svg");
 }

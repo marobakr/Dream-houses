@@ -1,6 +1,12 @@
 <button
-  class="btn location_btn d-block align-items-center justify-content-center me-auto"
-  [ngClass]="{ 'mb-32': isMb_32, 'active-color': disabled }"
+  class="btn location_btn d-flex align-items-center justify-content-center me-auto"
+  [ngClass]="{
+    'mb-32': isMb_32,
+    'active-color': disabled,
+
+    'me-auto': isMe_auto,
+    'mx-auto': !isMe_auto
+  }"
   [disabled]="!disabled"
 >
   @if ( haveImge) {

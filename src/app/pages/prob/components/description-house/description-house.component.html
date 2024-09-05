@@ -1,9 +1,11 @@
 <section class="dischouse">
-  <app-headr
-    [backTitle]="'العودة'"
-    [backImage]="'./assets/images/arrow-right.svg'"
-  ></app-headr>
-  <div class="container">
+  <div>
+    <app-headr
+      [backTitle]="'العودة'"
+      [backImage]="'./assets/images/arrow-right.svg'"
+    ></app-headr>
+  </div>
+  <div class="container position-relative">
     <h2 class="position-relative">قم بكتابة وصف منزل أحلامك</h2>
     <div>
       <div class="formcontrol mb-3">
@@ -15,17 +17,29 @@
           class="form-control"
           id="formGroupExampleInput"
           placeholder="مثلا فيلا قريبة من التجمع الخامس "
+          [(ngModel)]="msgeValue"
         />
       </div>
-      <app-text-editors></app-text-editors>
+
+      <div class="text-editoes">
+        <p class="mb-1">وصف تعبيري عن المنزل</p>
+        <quill-editor
+          class="w-100"
+          [modules]="editorModules"
+          [styles]="{ height: '297px' }"
+          (onEditorChanged)="changedEditor($event)"
+        ></quill-editor>
+      </div>
     </div>
 
     <app-button
       class="mb-0"
+      [isMe_auto]="false"
       [haveImge]="false"
-      [disabled]="false"
+      [disabled]="msgeValue.length > 10"
       [label]="'الخطوة التالية'"
       [isMb_32]="false"
+      (click)="nextStep(msgeValue.length > 10)"
     ></app-button>
     <p class="text-center">
       قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل
