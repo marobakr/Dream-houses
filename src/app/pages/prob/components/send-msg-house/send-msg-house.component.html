@@ -80,7 +80,7 @@
       [haveImge]="false"
       [label]="'الخطوة التالية'"
       [isMb_32]="false"
-      [disabled]="IsCheckedOne || (IsCheckedTwo && msg.length > 20)"
+      [disabled]="IsCheckedOne || IsCheckedTwo"
       (click)="nextStep(IsCheckedOne || (IsCheckedTwo && msg.length > 20))"
     ></app-button>
     <p class="text-center">
