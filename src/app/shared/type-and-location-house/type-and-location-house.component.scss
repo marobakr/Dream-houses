@@ -53,9 +53,8 @@
       /* Posistion */
       position: absolute;
       right: 32px;
-      top: 6px;
-      transform: translateY(-100%);
-
+      top: -7px;
+      transform: translate(100%, -100%);
       /* Box Model */
       width: 13px;
       height: 16px;
@@ -64,17 +63,14 @@
       background-size: 13px 16px;
       background-image: url("../../../assets/images/Vector.svg");
       content: "";
-
-      &.top-star {
-      }
     }
 
     &::before {
       /* Posotion */
       left: -3px;
+      transform: translate(-100%, 100%);
       position: absolute;
       bottom: 25px;
-      transform: translate(-100%, 100%);
       /* Box Model */
       width: 18px;
       height: 21px;
@@ -90,12 +86,6 @@
         }
       }
     }
-
-    &::after {
-      right: 32px;
-      top: -7px;
-      transform: translate(100%, -100%);
-    }
   }
 
   &_cards {
@@ -110,7 +100,6 @@
       .elips {
         /* Box Model */
         margin : {
-          top: 4px;
           right: 6px;
         }
       }
@@ -137,6 +126,10 @@
         @include FontFamily($Regular);
       }
     }
+  }
+  .w-59 {
+    width: 59px;
+    height: 59px;
   }
 
   &_footer {

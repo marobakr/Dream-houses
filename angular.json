@@ -35,7 +35,8 @@
                 "src/app/styles/base",
                 "src/app/styles/utilities",
                 "src/app/styles/components",
-                "src/app/styles/themes"
+                "src/app/styles/themes",
+                "src/app/styles/lang"
               ]
             },
             "assets": ["src/favicon.ico", "src/assets"],

@@ -1,5 +1,5 @@
 <section class="home">
-  <div class="container-flude">
+  <div class="container">
     <div class="home_inner position-relative">
       <div class="row g-0">
         <div class="col-12 col-md-6">
@@ -12,12 +12,13 @@
                     alt="fxemoji_megaphone"
                   />
                 </span>
-                تهيئة الحملات الإعلانية
+                {{ "homeHeading.title" | translate }}
               </p>
-              <h2>مرحبًا بك في منصة أختيار عقارات سكنية للتعمير</h2>
+              <h2>
+                {{ "homeHeading.welcome" | translate }}
+              </h2>
               <p class="label mb-0">
-                قم بإضافة عملائك الحاليين إلي نظامك الجديد لتبدأ التجربة""قم
-                بإضافة عملائك الحاليين إلي نظامك الجديد لتبدأ التجربة"
+                {{ "homeHeading.description" | translate }}
               </p>
             </div>
 
@@ -30,7 +31,9 @@
                     <img src="./assets/images/check.svg" alt="" />
                   </figure>
                 </div>
-                <p class="mb-0">قم بتحميل شعارك وتفاصيل علامتك التجارية</p>
+                <p class="mb-0">
+                  {{ "homeLabels.label1" | translate }}
+                </p>
               </div>
 
               <div class="label d-flex align-items-center">
@@ -41,7 +44,9 @@
                     <img src="./assets/images/check.svg" alt="" />
                   </figure>
                 </div>
-                <p class="mb-0">اختر وخصص الحقول التي تحتاجها</p>
+                <p class="mb-0">
+                  {{ "homeLabels.label2" | translate }}
+                </p>
               </div>
 
               <div class="label d-flex align-items-center">
@@ -52,7 +57,9 @@
                     <img src="./assets/images/check.svg" alt="" />
                   </figure>
                 </div>
-                <p class="mb-0">اختر موضوعاً وصمم مظهر استمارتك</p>
+                <p class="mb-0">
+                  {{ "homeLabels.label3" | translate }}
+                </p>
               </div>
 
               <div class="label d-flex align-items-center">
@@ -63,7 +70,9 @@
                     <img src="./assets/images/check.svg" alt="" />
                   </figure>
                 </div>
-                <p class="mb-0">ضبط رسالة شكر وإجراءات المتابعة</p>
+                <p class="mb-0">
+                  {{ "homeLabels.label4" | translate }}
+                </p>
               </div>
             </div>
           </div>
@@ -71,8 +80,12 @@
 
         <div class="col-12 col-md-6">
           <div class="home_left h-100 position-relative">
-            <h4>طريقة بناء الحملة الخاصة بك</h4>
-            <p class="label">الطريقة المختارة لطريقة إنشاء رسالة الحملة</p>
+            <h4>
+              {{ "homeLeft.howToBuild" | translate }}
+            </h4>
+            <p class="label">
+              {{ "homeLeft.selectedMethod" | translate }}
+            </p>
             <label for="Radioselect01" class="d-block">
               <div [ngClass]="{ Checked: IsCheckedOne }" class="box mb-3">
                 <div
@@ -92,9 +105,11 @@
                   />
                 </div>
 
-                <p class="child-one">اختيار يدوي</p>
+                <p class="child-one">
+                  {{ "radioOptions.manual.title" | translate }}
+                </p>
                 <p class="child-two mb-0">
-                  قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،
+                  {{ "radioOptions.manual.description" | translate }}
                 </p>
               </div>
             </label>
@@ -118,30 +133,38 @@
                   />
                 </div>
 
-                <p class="child-one">اختيار عن طريق الذكاء الأصطناعي</p>
+                <p class="child-one">
+                  {{ "radioOptions.ai.title" | translate }}
+                </p>
                 <p class="child-two mb-0">
-                  قم بإنشاء رسالة طلب سكنك بشكل يدوي ودقيق. اختر كلماتك بعناية،
+                  {{ "radioOptions.ai.description" | translate }}
                 </p>
               </div>
             </label>
 
             <hr class="my-0" />
 
+            @if (IsCheckedOne || IsCheckedTwo) {
             <div class="select">
-              <h2>قم بتسمية مشروع أختيار</h2>
-              <p>أسم مشروعك يجب ان يكون مميز وواضح</p>
+              <h2>
+                {{ "projectNaming.title" | translate }}
+              </h2>
+              <p>
+                {{ "projectNaming.description" | translate }}
+              </p>
               <input
                 type="text"
                 class="form-control"
                 id="exampleFormControlInput1"
-                placeholder="أسم مشروع مقترح"
+                [placeholder]="'projectNaming.description' | translate"
               />
             </div>
+            } @else { }
 
-            <div class="parent_btn w-100">
+            <div class="parent_btn w-100 position-absolute bottom-0">
               <app-button
                 [haveImge]="false"
-                [label]="'أبدأ الأن'"
+                [label]="'button.startNow' | translate"
                 [isMe_auto]="true"
                 [isMb_32]="false"
                 [disabled]="IsCheckedOne || IsCheckedTwo"

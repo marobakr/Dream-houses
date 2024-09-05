@@ -7,12 +7,13 @@ import {
   ViewChild,
 } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { HeadrComponent } from '../headr/headr.component';
 type statusImage = 'success' | 'pendding';
 @Component({
   selector: 'app-status-message',
   standalone: true,
-  imports: [HeadrComponent, CommonModule],
+  imports: [HeadrComponent, CommonModule, TranslateModule],
   templateUrl: './status-message.component.html',
   styleUrl: './status-message.component.scss',
 })

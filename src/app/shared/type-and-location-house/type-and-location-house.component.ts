@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from '../button/button.component';
 import { HeadrComponent } from '../headr/headr.component';
 
 @Component({
   selector: 'app-type-and-location-house',
   standalone: true,
-  imports: [HeadrComponent, ButtonComponent, CommonModule],
+  imports: [HeadrComponent, ButtonComponent, CommonModule, TranslateModule],
   templateUrl: './type-and-location-house.component.html',
   styleUrl: './type-and-location-house.component.scss',
 })

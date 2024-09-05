@@ -1,6 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterOutlet } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   EditorChangeContent,
   EditorChangeSelection,
@@ -18,6 +19,7 @@ import { HeadrComponent } from '../../../../shared/headr/headr.component';
     FormsModule,
     RouterOutlet,
     QuillEditorComponent,
+    TranslateModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 
@@ -25,9 +27,8 @@ import { HeadrComponent } from '../../../../shared/headr/headr.component';
   styleUrl: './description-house.component.scss',
 })
 export class DescriptionHouseComponent {
-  constructor(private _router: Router) {
-    console.log(this.msgeValue);
-  }
+  constructor(private _router: Router) {}
+
   descriptionValue: any = '';
   msgeValue: string = '';
 

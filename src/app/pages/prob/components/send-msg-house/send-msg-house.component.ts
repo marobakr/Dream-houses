@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { ButtonComponent } from '../../../../shared/button/button.component';
 import { HeadrComponent } from '../../../../shared/headr/headr.component';
 
 @Component({
   selector: 'app-send-msg-house',
   standalone: true,
-  imports: [HeadrComponent, ButtonComponent, FormsModule],
+  imports: [HeadrComponent, ButtonComponent, FormsModule, TranslateModule],
   templateUrl: './send-msg-house.component.html',
   styleUrl: './send-msg-house.component.scss',
 })

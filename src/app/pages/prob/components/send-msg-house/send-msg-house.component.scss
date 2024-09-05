@@ -6,7 +6,6 @@
     &::before {
       /* Posistion */
       position: absolute;
-      left: 70px;
       top: 0px;
 
       /* Box Model */
@@ -151,10 +150,6 @@
           border-color: rgba(211, 214, 220, 0.4);
           box-shadow: none;
         }
-      }
-      label {
-        /* Position */
-        right: 0;
       }
     }
   }

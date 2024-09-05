@@ -1,0 +1,53 @@
+[dir="rtl"] .home_right {
+  border-top-right-radius: 10.5px;
+}
+
+[dir="rtl"] .close {
+  /* Position */
+  left: 0;
+}
+
+[dir="rtl"] .elips {
+  margin-right: 6px;
+}
+
+[dir="rtl"] .location_btn,
+.back,
+.media-content {
+  flex-direction: row;
+}
+
+[dir="rtl"] .dischouse .container::before {
+  /* Posistion */
+  left: 85px;
+}
+
+[dir="rtl"] .sendMsg .container::before {
+  /* Posistion */
+  left: 70px;
+}
+
+[dir="rtl"] .label {
+  /* Box Model */
+  right: 0;
+}
+
+[dir="rtl"] .form-check-input[type="radio"] {
+  /* Box Model */
+  left: 7px;
+}
+
+[dir="rtl"] .media-content p {
+  /* Box Model */
+  order: 0;
+}
+
+[dir="rtl"] .inner-check .form-checked {
+  /* Box Model */
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .home_left .box {
+  /* Box Model */
+  padding-left: 15px;
+}

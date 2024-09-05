@@ -1,28 +1,32 @@
 <section class="dischouse">
   <div>
     <app-headr
-      [backTitle]="'العودة'"
+      [backTitle]="'dischouse.backTitle' | translate"
       [backImage]="'./assets/images/arrow-right.svg'"
     ></app-headr>
   </div>
   <div class="container position-relative">
-    <h2 class="position-relative">قم بكتابة وصف منزل أحلامك</h2>
+    <h2 class="position-relative">
+      {{ "dischouse.headerTitle" | translate }}
+    </h2>
     <div>
       <div class="formcontrol mb-3">
-        <label for="formGroupExampleInput" class="form-label mb-2"
-          >وصف مختصر عن المنزل</label
-        >
+        <label for="formGroupExampleInput" class="form-label mb-2">
+          {{ "dischouse.shortDescriptionLabel" | translate }}
+        </label>
         <input
           type="text"
           class="form-control"
           id="formGroupExampleInput"
-          placeholder="مثلا فيلا قريبة من التجمع الخامس "
+          [placeholder]="'dischouse.shortDescriptionPlaceholder' | translate"
           [(ngModel)]="msgeValue"
         />
       </div>
 
       <div class="text-editoes">
-        <p class="mb-1">وصف تعبيري عن المنزل</p>
+        <p class="mb-1">
+          {{ "dischouse.expressiveDescriptionLabel" | translate }}
+        </p>
         <quill-editor
           class="w-100"
           [modules]="editorModules"
@@ -37,12 +41,12 @@
       [isMe_auto]="false"
       [haveImge]="false"
       [disabled]="msgeValue.length > 10"
-      [label]="'الخطوة التالية'"
+      [label]="'dischouse.nextStepButton' | translate"
       [isMb_32]="false"
       (click)="nextStep(msgeValue.length > 10)"
     ></app-button>
     <p class="text-center">
-      قم بالضغط على زر "بدء" للبدء في العملية، لادخال معلومات المنزل
+      {{ "dischouse.startButtonText" | translate }}
     </p>
   </div>
 </section>

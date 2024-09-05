@@ -1,10 +1,11 @@
 import { Location } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-headr',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './headr.component.html',
   styleUrl: './headr.component.scss',
 })

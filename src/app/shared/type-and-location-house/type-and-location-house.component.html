@@ -1,7 +1,7 @@
 <section class="location text-center">
   <div>
     <app-headr
-      [backTitle]="'العودة'"
+      [backTitle]="'sendMsg.backTitle' | translate"
       [backImage]="'./assets/images/arrow-right.svg'"
     ></app-headr>
   </div>
@@ -34,7 +34,11 @@
               </span>
 
               <figure>
-                <img [src]="cardImagePathOne" [alt]="cardTextOne" />
+                <img
+                  class="w-59"
+                  [src]="cardImagePathOne"
+                  [alt]="cardTextOne"
+                />
               </figure>
               <figcaption>{{ cardTextOne }}</figcaption>
             </div>
@@ -57,7 +61,11 @@
               </span>
 
               <figure>
-                <img [src]="cardImagePathTwo" [alt]="cardTextTwo" />
+                <img
+                  class="w-59"
+                  [src]="cardImagePathTwo"
+                  [alt]="cardTextTwo"
+                />
               </figure>
 
               <figcaption class="">{{ cardTextTwo }}</figcaption>
@@ -81,7 +89,11 @@
               </span>
 
               <figure>
-                <img [src]="cardImagePathThere" [alt]="cardTextThere" />
+                <img
+                  class="w-59"
+                  [src]="cardImagePathThere"
+                  [alt]="cardTextThere"
+                />
               </figure>
               <figcaption class="">{{ cardTextThere }}</figcaption>
             </div>
@@ -98,10 +110,7 @@
       [isMb_32]="true"
       [disabled]="IsCheckedOne || IsCheckedTwo || IsCheckedThere"
       (click)="nextStep(IsCheckedOne || IsCheckedTwo || IsCheckedThere)"
-      [label]="
-        '
-    أبدأ الأن'
-      "
+      [label]="'action.startNow' | translate"
     ></app-button>
 
     <div class="location_footer">

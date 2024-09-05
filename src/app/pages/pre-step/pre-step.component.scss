@@ -2,7 +2,7 @@
 @import "variables";
 
 .home {
-  .container-flude {
+  .container {
     .row {
       height: 100vh;
     }
@@ -14,14 +14,13 @@
 
     .close {
       /* Box Model */
-      margin : {
+      margin: {
         top: 24px;
         left: 28px;
         bottom: 17px;
       }
 
       /* Position */
-      left: 0;
       top: 0;
     }
   }
@@ -142,6 +141,7 @@
       right: 20px;
       left: 33px;
     }
+    border-top-left-radius: 10.5px;
 
     /* Other */
     background: #fff;
@@ -183,8 +183,8 @@
       /* Box Model */
       padding: {
         right: 15px;
-        bottom: 23px;
       }
+      margin-bottom: 23px;
 
       .images {
         /* Box Model */
@@ -229,7 +229,7 @@
       /* Position */
       margin: {
         left: 32px;
-        bottom: 20px;
+        bottom: 30px;
       }
     }
     hr {

@@ -6,14 +6,16 @@ import {
   trigger,
 } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MytranslateService } from '../../services/mytranslate.service';
 import { ButtonComponent } from '../../shared/button/button.component';
 
 @Component({
   selector: 'app-pre-step',
   standalone: true,
-  imports: [CommonModule, ButtonComponent],
+  imports: [CommonModule, ButtonComponent, TranslateModule],
   templateUrl: './pre-step.component.html',
   styleUrl: './pre-step.component.scss',
   animations: [
@@ -40,6 +42,8 @@ export class PreStepComponent {
   IsCheckedOne: boolean = false;
   IsCheckedTwo: boolean = false;
   constructor(private router: Router) {}
+  private _mytranslateService = inject(MytranslateService);
+  readonly _translateService = inject(TranslateService);
 
   onRadioChange(
     selectedOption: HTMLInputElement,

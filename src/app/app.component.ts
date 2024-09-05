@@ -20,4 +20,9 @@ export class AppComponent {
   change(lang: string): void {
     this._mytranslateService.changeLang(lang);
   }
+  changeLanguage(event: Event) {
+    const selectElement = event.target as HTMLSelectElement;
+    const lang = selectElement.value;
+    this.change(lang);
+  }
 }

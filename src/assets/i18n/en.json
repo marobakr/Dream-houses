@@ -1,14 +1,94 @@
 {
-  "userInfo": {
-    "name": "Name",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address",
-    "city": "City",
-    "state": "State",
-    "zip": "Zip",
-    "country": "Country",
-    "save": "Save",
-    "lang": "Lang"
-  }
+  "homeHeading": {
+    "title": "Ad Campaign Setup",
+    "welcome": "Welcome to the Residential Real Estate Selection Platform",
+    "description": "Add your existing clients to your new system to start the experience"
+  },
+  "homeLabels": {
+    "label1": "Upload your logo and brand details",
+    "label2": "Choose and customize the fields you need",
+    "label3": "Choose a theme and design your form",
+    "label4": "Set up a thank you message and follow-up actions"
+  },
+  "homeLeft": {
+    "howToBuild": "How to Build Your Campaign",
+    "selectedMethod": "The selected method for creating the campaign message"
+  },
+  "radioOptions": {
+    "manual": {
+      "title": "Manual Selection",
+      "description": "Create your housing request message manually and accurately. Choose your words carefully."
+    },
+    "ai": {
+      "title": "AI Selection",
+      "description": "Create your housing request message manually and accurately. Choose your words carefully."
+    }
+  },
+  "projectNaming": {
+    "title": "Name Your Selection Project",
+    "description": "Your project name should be unique and clear",
+    "placeholder": "Suggested Project Name"
+  },
+  "button": {
+    "startNow": "Start Now"
+  },
+  "closeButton": "Close",
+
+  "typeHouse": {
+    "location_heading": "Choose the type of house",
+    "location_title": "Choose your housing source to complete the    remaining steps",
+    "cardTextOne": "Villa",
+    "cardTextTwo": "Duplex Apartment",
+    "cardTextThree": "Residential Apartment",
+    "footerLabelOne": "We are here to help you choose your home with ease and care",
+    "footerLabelTwo": "Press the 'Start' button to begin the process and follow the instructions to enter the campaign information"
+  },
+  "typeLocation": {
+    "location_heading": "Choose your preferred location",
+    "location_title": "Choose your housing source to complete the remaining steps",
+    "cardTextOne": "Cairo",
+    "cardTextTwo": "North Coast",
+    "cardTextThree": "Dahab",
+    "footerLabelOne": "We are here to help you choose your home with ease and care",
+    "footerLabelTwo": "Press the 'Start' button to begin the process and follow the instructions to enter the campaign information"
+  },
+  "dischouse": {
+    "backTitle": "Back",
+    "headerTitle": "Write a description of your dream house",
+    "shortDescriptionLabel": "Brief description of the house",
+    "shortDescriptionPlaceholder": "For example, a villa near Fifth Settlement",
+    "expressiveDescriptionLabel": "Expressive description of the house",
+    "nextStepButton": "Next Step",
+    "startButtonText": "Press the 'Start' button to begin the process and enter house information"
+  },
+  "sendMsg": {
+    "backTitle": "Back",
+    "title": "Write the message text",
+    "subtitle": "Name your campaign and the expected sending date",
+    "designLabel": "House Design",
+    "modernDesign": "Modern Design",
+    "smartDesign": "Modern and Smart Design",
+    "previewLabel": "Preview House Description",
+    "subjectLabel": "Subject:",
+    "subjectDescription": "Villa near Fifth Settlement",
+    "textareaPlaceholder": "Dear [Customer Name], we at [Company Name] always strive to provide the best solutions",
+    "nextStepButton": "Next Step",
+    "startButtonText": "Press the 'Start' button to begin the process and enter house information"
+  },
+  "messagePendding": {
+    "messageHead": "Your housing message is being sent",
+    "messageTitle": "Please wait a few minutes only"
+  },
+  "messageSuccess": {
+    "messageHead": "Your message has been successfully sent",
+    "messageTitle": "Please wait a few minutes"
+  },
+  "action": {
+    "startNow": "Start Now"
+  },
+  "status": {
+    "sending": "Sending",
+    "progress": "10/100"
+  },
+  "exite": "Exit"
 }

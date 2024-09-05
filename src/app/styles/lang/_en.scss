@@ -1,0 +1,87 @@
+[dir="ltr"] .close {
+  /* Box Model */
+  margin: {
+    top: 24px;
+    right: 28px;
+    bottom: 17px;
+  }
+  /* Position */
+  right: 0;
+}
+
+[dir="ltr"] .home_right {
+  /* Box Model */
+  padding-left: 50px;
+  border-top-left-radius: 10.5px;
+
+  @media (width <= 500px) {
+    & {
+      padding-left: 20px;
+    }
+  }
+}
+
+[dir="ltr"] .home_left {
+  /* Box Model */
+  padding-left: 20px;
+  padding-left: 33px;
+  border-top-right-radius: 10.5px;
+}
+
+[dir="ltr"] .box {
+  /* Box Model */
+  padding-left: 15px;
+}
+
+[dir="ltr"] .parent_btn {
+  /* Box Model */
+  padding-right: 15px;
+}
+
+[dir="ltr"] .location_title {
+  &::after {
+    /* Posistion */
+    position: absolute;
+    right: 32px;
+    top: -7px;
+  }
+}
+
+[dir="ltr"] .elips {
+  margin-left: 6px;
+}
+
+[dir="ltr"] .location_btn,
+.back {
+  flex-direction: row-reverse;
+}
+
+[dir="ltr"] .dischouse .container::before {
+  /* Posistion */
+  right: 85px;
+}
+
+[dir="ltr"] .sendMsg .container::before {
+  /* Posistion */
+  right: 70px;
+}
+
+[dir="ltr"] .label {
+  /* Box Model */
+  left: 0;
+}
+
+[dir="ltr"] .form-check-input[type="radio"] {
+  /* Box Model */
+  left: 0;
+}
+
+[dir="ltr"] .media-content p {
+  /* Box Model */
+  order: -1;
+}
+
+[dir="ltr"] .inner-check .form-checked {
+  /* Box Model */
+  flex-direction: row;
+}
