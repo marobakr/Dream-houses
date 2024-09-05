@@ -48,4 +48,5 @@ export class PreStepComponent {
 -5 change cardm manula to card bootstrap
 6- use max-width for any fixed width
 7- نفترض كلام مرو صح طب حهط border-raiuis ازاي؟
+8-make global style for shared style p ,h2
 */

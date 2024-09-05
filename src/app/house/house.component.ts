@@ -4,6 +4,7 @@ import { MytranslateService } from '../services/mytranslate.service';
 import { PreStepComponent } from './components/pre-step/pre-step.component';
 import { ProbComponent } from './components/prob/prob.component';
 import { SelectionComponent } from './components/selection/selection.component';
+import { SubmissionlComponent } from './components/submissionl/submissionl.component';
 
 @Component({
   selector: 'app-house',
@@ -13,6 +14,7 @@ import { SelectionComponent } from './components/selection/selection.component';
     PreStepComponent,
     SelectionComponent,
     ProbComponent,
+    SubmissionlComponent,
   ],
   templateUrl: './house.component.html',
   styleUrl: './house.component.scss',
